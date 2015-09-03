@@ -1,16 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
 /*Some css fixes to use night theme with IPython slides*/
 body {
 background-color: #eff4ea;
+font-family: 'cwTeXHei','Raleway', sans-serif;
 }
 .reveal p {
-font-family: 'Raleway', sans-serif;
+font-family: 'cwTeXHei','Raleway', sans-serif;
 color: #2d28cc;
 }
 .reveal ul, ol {
 color: blue;
+}
+.reveal ul li {
+    font-family: 'cwTeXYen','Raleway';
 }
 div.output_area pre {
 color: white;
@@ -22,8 +28,8 @@ background: #F00;
 color: #4aaeee;
 }
 div.footer {
-font-size:12pt;
-font-family: 'Audiowide',sans-serif;
+font-size:14pt;
+font-family: 'cwTeXYen','Audiowide',sans-serif;
 font-style: italic;
 color: #4aaeee;
 text-align: center
@@ -31,4 +37,10 @@ text-align: center
 hr {
 	border:0; height:1px;
 	color:#d4d4d4	/* IE6 */
+}
+.reveal h1 {
+    font-family: 'cwTeXYen','Audiowide',sans-serif;
+}
+h2 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
 }
