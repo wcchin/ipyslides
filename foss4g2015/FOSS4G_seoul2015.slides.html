@@ -230,7 +230,7 @@ div.output_prompt {
 <br /> <br /> <br /> <br /> <br /> <br /></li>
 </ul>
 <hr>
-<div class="footer">**Benny Chin.** 2015 (Department of Geography, National Taiwan University)</div>
+<div class="footer"><b>Benny Chin.</b> 2015 (Department of Geography, National Taiwan University)</div>
 <div class="footer">Tzai-Hung Wen, Fei-Ying Kuo, Hwa-Lung Yu, Ming-Che Hu</div>
 </div>
 </div>
@@ -393,10 +393,10 @@ This project is supported by the grant of Centers for Disease Control , R.O.C.(T
 <p><img src="figs/framework_eng.png" alt="framework" height="490" width="738"></p>
 <p>The framework of the clusters monitoring system contain four components:</p>
 <ul>
-<li>core system: for managing the requests and responses, and it is the controller of the framework.</li>
-<li>database: for storing the cleaned and structured data, and the analysis results.</li>
-<li>anlaysis modules: for running the analysis processes.</li>
-<li>web-based UI: for communicating with the authorized users.</li>
+<li>core system (<strong>web2py</strong>): for managing the requests and responses, and it is the controller of the framework.</li>
+<li>database (<strong>postgresql</strong>): for storing the cleaned and structured data, and the analysis results.</li>
+<li>anlaysis modules (<strong>in python</strong>): for running the analysis processes.</li>
+<li>web-based UI (<strong>leafletjs &amp; bokeh</strong>): for communicating with the authorized users.</li>
 </ul>
 <hr>
 <div class="footer">Benny Chin. 2015</div>
@@ -410,7 +410,7 @@ This project is supported by the grant of Centers for Disease Control , R.O.C.(T
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="component---Core-system">component - Core system<a class="anchor-link" href="#component---Core-system">&#182;</a></h3><hr>
-<p>For current prototype of the framework, we use a web application named web2py, 
+<p>For current prototype of the framework, we use a web application named <strong>web2py</strong>, 
 an open-source, python-based,web application framework, to construct a dynamic website.<br>
 Web2py is a simple and powerful (enough) web application framework for our monitoring system.</p>
 <p>web2py:</p>
@@ -431,7 +431,7 @@ Web2py is a simple and powerful (enough) web application framework for our monit
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="component---Database">component - Database<a class="anchor-link" href="#component---Database">&#182;</a></h3><hr>
-<p>Postgresql:</p>
+<p><strong>Postgresql</strong>:</p>
 <ul>
 <li>the raw data: input from the surveillance and reporting systems.</li>
 <li>the spatial data: including hospital info, administrative boundaries, sales POI.</li>
@@ -449,11 +449,11 @@ Web2py is a simple and powerful (enough) web application framework for our monit
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="component---Analysis-modules">component - Analysis modules<a class="anchor-link" href="#component---Analysis-modules">&#182;</a></h3><hr>
-<p>analyzing modules is writen in python environment:</p>
+<p>analyzing modules is writen in <strong>python environment</strong>:</p>
 <ol>
-<li>clustering analysis models - st-dbscan...</li>
-<li>spatial data manipulations - proximity, network connectivity, joins... </li>
-<li>visualizations</li>
+<li>clustering analysis models - st-dbscan : pyproj, numpy...</li>
+<li>spatial data manipulations - proximity, network connectivity, joins : shapely, networkx...</li>
+<li>visualizations : bokeh, matplotlib...</li>
 </ol>
 <hr>
 <div class="footer">Benny Chin. 2015</div>
@@ -468,8 +468,8 @@ Web2py is a simple and powerful (enough) web application framework for our monit
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="component---Web-based-UI">component - Web-based UI<a class="anchor-link" href="#component---Web-based-UI">&#182;</a></h3><hr>
 <ul>
-<li>showing the map: Leafletjs, MapBox</li>
-<li>showing the charts: Bokeh, Plotly, Mpld3</li>
+<li>showing the map: <strong>Leafletjs, MapBox</strong></li>
+<li>showing the charts: <strong>Bokeh, Plotly, Mpld3</strong></li>
 </ul>
 <hr>
 <div class="footer">Benny Chin. 2015</div>
@@ -484,53 +484,9 @@ Web2py is a simple and powerful (enough) web application framework for our monit
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The--warning-flowmap">The  warning flowmap<a class="anchor-link" href="#The--warning-flowmap">&#182;</a></h2><hr>
-<p><img src="figs/warning_workflow.png" alt="warning workflow" height="300" width="500"></p>
-<ol>
-<li>identifying temporal anomaly with high value of patients from RODS data</li>
-<li>investigating the spatial-temporal distribution from temporal anomalys</li>
-<li>compare the results with LARS data to identify the potential sources</li>
-</ol>
-<hr>
-<div class="footer">Benny Chin. 2015</div>
-</div>
-</div>
-</div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="workflow---temporal-anomaly">workflow - temporal anomaly<a class="anchor-link" href="#workflow---temporal-anomaly">&#182;</a></h3><hr>
-<p><img src="figs/temporal_anomaly_eng.png" alt="temporal anomaly" height="490" width="738"></p>
-<p>Temporal anomaly is those time-point with higher values of patients (with the symptoms) than the regular situation.<br>
-For example:</p>
-<ul>
-<li>each dots represent the number of patients in a day at the hospital;</li>
-<li>dots in purple means the number of patients is less than 50;</li>
-<li>dots in red means the number of patients is more than 50. </li>
-</ul>
-<hr>
-<div class="footer">Benny Chin. 2015</div>
-</div>
-</div>
-</div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="workflow---space-time-hotspot">workflow - space-time hotspot<a class="anchor-link" href="#workflow---space-time-hotspot">&#182;</a></h3><hr>
-<p><img src="figs/spatial_anomaly_eng.png" alt="spatial anomaly" height="490" width="738"></p>
-<p>space-time hotspot represent the hotspot of the temporal anomalies.<br>
-For example:</p>
-<ul>
-<li>3 nearby hospitals; </li>
-<li>the red dots represent the temporal anomaly of each hospital on each day;</li>
-<li>the hotspot appeared at around the four hospitals starting about from day 7.</li>
-</ul>
+<h3 id="current-prototype">current prototype<a class="anchor-link" href="#current-prototype">&#182;</a></h3><hr>
+<p>The prototype (the above framework) is now running, with some testing data (until August 2015).
+The hotspot analysis methods is the ST-DBSCAN (Spatio-temporal Density-Based spatial clustering of applications with noise).</p>
 <hr>
 <div class="footer">Benny Chin. 2015</div>
 </div>
@@ -719,12 +675,88 @@ For example:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Thank-you!">Thank you!<a class="anchor-link" href="#Thank-you!">&#182;</a></h2><hr>
+<h2 id="Things-currently-ongoing~">Things currently ongoing~<a class="anchor-link" href="#Things-currently-ongoing~">&#182;</a></h2><hr>
+<ol>
+<li>redesign the "<em>warning flowmap</em>" and the hotspot analysis algorithms</li>
+<li>redesign the web-app user interface...</li>
+<li>planning of adding geoserver or mapserver...</li>
+<li>database updating framework</li>
+</ol>
+<hr>
+<div class="footer">Benny Chin. 2015</div>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The--warning-flowmap">The  warning flowmap<a class="anchor-link" href="#The--warning-flowmap">&#182;</a></h2><hr>
+<p><img src="figs/warning_workflow.png" alt="warning workflow" height="300" width="500"></p>
+<ol>
+<li>identifying temporal anomaly with high value of patients from RODS data</li>
+<li>investigating the spatial-temporal distribution from temporal anomalys</li>
+<li>compare the results with LARS data to identify the potential sources</li>
+</ol>
+<hr>
+<div class="footer">Benny Chin. 2015</div>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="workflow---temporal-anomaly">workflow - temporal anomaly<a class="anchor-link" href="#workflow---temporal-anomaly">&#182;</a></h3><hr>
+<p><img src="figs/temporal_anomaly_eng.png" alt="temporal anomaly" height="490" width="738"></p>
+<p>Temporal anomaly is those time-point with higher values of patients (with the symptoms) than the regular situation.<br>
+For example:</p>
 <ul>
-<li>### Questions?</li>
-<li>### Suggestions?
-<br /> <br /> <br /> <br /></li>
+<li>each dots represent the number of patients in a day at the hospital;</li>
+<li>dots in purple means the number of patients is less than 50;</li>
+<li>dots in red means the number of patients is more than 50. </li>
 </ul>
+<hr>
+<div class="footer">Benny Chin. 2015</div>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="workflow---space-time-hotspot">workflow - space-time hotspot<a class="anchor-link" href="#workflow---space-time-hotspot">&#182;</a></h3><hr>
+<p><img src="figs/spatial_anomaly_eng.png" alt="spatial anomaly" height="490" width="738"></p>
+<p>space-time hotspot represent the hotspot of the temporal anomalies.<br>
+For example:</p>
+<ul>
+<li>3 nearby hospitals; </li>
+<li>the red dots represent the temporal anomaly of each hospital on each day;</li>
+<li>the hotspot appeared at around the four hospitals starting about from day 7.</li>
+</ul>
+<hr>
+<div class="footer">Benny Chin. 2015</div>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Thank-you!">Thank you!<a class="anchor-link" href="#Thank-you!">&#182;</a></h2><hr>
+<h3 id="Questions?">Questions?<a class="anchor-link" href="#Questions?">&#182;</a></h3><h3 id="Suggestions?">Suggestions?<a class="anchor-link" href="#Suggestions?">&#182;</a></h3><p><br /> <br /> <br /> <br /></p>
 <p>My contact info.:</p>
 <ul>
 <li>Benny Chin  </li>
