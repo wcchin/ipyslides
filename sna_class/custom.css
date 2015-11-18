@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+/*Some css fixes to use night theme with IPython slides*/
+body {
+	background-color: #eff4ea;
+	font-family: 'cwTeXHei','Raleway', sans-serif;
+}
+.reveal p {
+	font-family: 'cwTeXHei','Raleway', sans-serif;
+	color: #2d28cc;
+}
+.reveal ul, ol {
+	color: blue;
+}
+.reveal ul li {
+    font-family: 'cwTeXYen','Raleway';
+}
+div.output_area pre {
+	color: white;
+}
+div.output_stderr {
+	background: #F00;
+}
+.reveal table th, .reveal table td {
+	color: #3d3737;
+}
+div.footer {
+	font-size:14pt;
+	font-family: 'cwTeXYen','Droid Serif',sans-serif;
+	font-style: italic;
+	color: #4403ff;
+	text-align: center
+}
+hr {
+	border:0; height:1px;
+	color:#d4d4d4	/* IE6 */
+}
+.reveal h5 {
+    font-family: 'cwTeXYen','Droid Serif',sans-serif;
+}
+.reveal h2 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+}
+.reveal h3 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+}
+.reveal h4 {
+    font-family: 'cwTeXYen','Droid Serif',sans-serif;
+}
+.reveal table { 
+	border: 0; 
+	font-family: 'Droid Serif'; 
+	font-size:20px; 
+} 
