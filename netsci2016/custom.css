@@ -1,0 +1,18 @@
+
+/*Some css fixes to use night theme with IPython slides*/
+/*
+body {
+background: url(logo.png)
+	no-repeat
+    left bottom;
+padding: 5px 0 5px 25px;
+}
+*/
+.reveal{ 
+font-size: 200;
+} 
+div.input_area{
+  font-size: 0.5em
+}
+
+
