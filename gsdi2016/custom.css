@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+/* not using chinese in this presentation
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+*/
 
 /*Some css fixes to use night theme with IPython slides*/
 html.img-right div.slide-background.present {
@@ -11,7 +13,7 @@ html.img-right div.slide-background.present {
 body {
     font-family: 'cwTeXHei','Raleway', sans-serif;
     background-color: rgba(0,0,0,0.7);
-    background: url("images/bg_09c.png");
+    background: url("images/bg_09d.png");
 	background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 100%;
@@ -24,7 +26,7 @@ body {
 /* for intro page */
 html.intro body {
     background-color: rgba(0,0,0,1.0);
-	background:url("images/street_ntu5.png");
+	background:url("images/street_ntu6.png");
 	background-repeat: no-repeat;
 	background-position:bottom right;
 	background-size: 100%;
@@ -40,7 +42,7 @@ html.timelapse .inner_cell div {
 
 /* for data taipei page */
 html.datataipei body {
-	background:url("images/datataipei.png");
+	background:url("images/datataipei2.png");
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
@@ -50,7 +52,7 @@ html.datataipei .inner_cell div {
 }
 /* for taipei github for traffic page */
 html.traffic_api body {
-	background:url("images/traffic_realtime.png");
+	background:url("images/taipei_api.png");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: contain;
@@ -60,7 +62,7 @@ html.trafficapi .inner_cell div {
 }
 /* for interfacing system setup page */
 html.interfacing body {
-	background:url("images/interfacing.png");
+	background:url("images/interfacing2.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -70,20 +72,20 @@ html.interfacing .inner_cell div {
 }
 /* for VD sample page */
 html.vd_sample body {
-    background:url("figures/vd_sample2.png");
+    background:url("figures/vd_sample2b.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 }
 html.vd_sample .inner_cell div {
 	background-color: rgba(150,150,150,0.2);
 }
 /* for bus sample page */
 html.bus_sample body {
-	background:url("figures/bus_sample2.png");
+	background:url("figures/bus_sample2b.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 }
 html.bus_sample .inner_cell div {
 	background-color: rgba(150,150,150,0.2);
