@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+/*Some css fixes to use night theme with IPython slides*/
+html.img-right div.slide-background.present {
+    background-position: bottom right;
+}
+/* for all background */
+body {
+    font-family: 'cwTeXHei','Raleway', sans-serif;
+    background-color: rgba(0,0,0,0.7);
+    background: url("images/bg_09c.png");
+	background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+}
+.inner_cell {
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* for some pages */
+/* for intro page */
+html.intro body {
+    background-color: rgba(0,0,0,1.0);
+	background:url("images/street_ntu5.png");
+	background-repeat: no-repeat;
+	background-position:bottom right;
+	background-size: 100%;
+}
+html.intro .inner_cell div {
+	background-color: rgba(255,255,255,0.1);
+}
+
+/* for timelapse page */
+html.timelapse .inner_cell div {
+	background-color: rgba(255,255,255,0.3);
+}
+
+/* for data taipei page */
+html.datataipei body {
+	background:url("images/datataipei.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+html.datataipei .inner_cell div {
+	background-color: rgba(255,255,255,0.01);
+}
+/* for taipei github for traffic page */
+html.traffic_api body {
+	background:url("images/traffic_realtime.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+html.trafficapi .inner_cell div {
+	background-color: rgba(255,255,255,0.8);
+}
+/* for interfacing system setup page */
+html.interfacing body {
+	background:url("images/interfacing.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+html.interfacing .inner_cell div {
+	background-color: rgba(255,255,255,0.1);
+}
+/* for VD sample page */
+html.vd_sample body {
+    background:url("figures/vd_sample2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+html.vd_sample .inner_cell div {
+	background-color: rgba(150,150,150,0.2);
+}
+/* for bus sample page */
+html.bus_sample body {
+	background:url("figures/bus_sample2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+html.bus_sample .inner_cell div {
+	background-color: rgba(150,150,150,0.2);
+}
+/* for youbike sample page */
+html.youbike_sample body {
+	background:url("figures/youbike_sample3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+html.youbike_sample .inner_cell div {
+	background-color: rgba(255,255,255,0.1);
+}
+/* for mrt sample page */
+html.mrt_sample body {
+	background:url("figures/mrt_sample3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+html.mrt_sample .inner_cell div {
+	background-color: rgba(255,255,255,0.1);
+}
+
+
+/*
+html.vehiclemovement .inner_cell div {
+	background-color: rgba(255,255,255,0.1);
+}*/
+
+/* other customization */
+.reveal p {
+    font-family: 'cwTeXHei','Raleway', sans-serif;
+    text-transform: none !important;
+}
+.reveal ul li {
+    font-family: 'cwTeXYen','Raleway';
+}
+.reveal h1,h2,h3,h4,h5,h6 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+    text-transform: none !important;
+    font-weight: normal;
+}
+.reveal h1,h2 {
+    font-family: 'cwTeXYen','Roboto Slab',sans-serif;
+    font-weight: normal;
+}
+/*
+.reveal h2 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+    text-transform: none !important;
+}
+.reveal h3 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+    text-transform: none !important;
+}
+.reveal h4 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+    text-transform: none !important;
+}
+.reveal h5 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+    text-transform: none !important;
+}
+.reveal h6 {
+    font-family: 'cwTeXYen','Raleway',sans-serif;
+    text-transform: none !important;
+}*/
+
+/* table */
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+
+.reveal table th {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border: none;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #95d0fc; }
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #95d0fc; }
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #95d0fc; }
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #95d0fc; }
+
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #ffffe4; }
+
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #ffffe4; }
+
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #ffffe4; }
+
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #ffffe4; }
