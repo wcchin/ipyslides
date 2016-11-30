@@ -37,7 +37,7 @@ html.intro .inner_cell div {
 
 /* for timelapse page */
 html.timelapse .inner_cell div {
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.8);
 }
 
 /* for data taipei page */
@@ -48,17 +48,17 @@ html.datataipei body {
 	background-size: cover;
 }
 html.datataipei .inner_cell div {
-	background-color: rgba(255,255,255,0.01);
+	background-color: rgba(255,255,255,0.7);
 }
 /* for taipei github for traffic page */
 html.traffic_api body {
-	background:url("images/taipei_api.png");
+	background:url("images/taipei_api2.png");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: contain;
 }
 html.trafficapi .inner_cell div {
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.9);
 }
 /* for interfacing system setup page */
 html.interfacing body {
@@ -72,7 +72,7 @@ html.interfacing .inner_cell div {
 }
 /* for VD sample page */
 html.vd_sample body {
-    background:url("figures/vd_sample2b.png");
+    background:url("figures/vd_sample2c.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -82,7 +82,7 @@ html.vd_sample .inner_cell div {
 }
 /* for bus sample page */
 html.bus_sample body {
-	background:url("figures/bus_sample2b.png");
+	background:url("figures/bus_sample2c.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -92,7 +92,7 @@ html.bus_sample .inner_cell div {
 }
 /* for youbike sample page */
 html.youbike_sample body {
-	background:url("figures/youbike_sample3.png");
+	background:url("figures/youbike_sample2c.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -102,13 +102,23 @@ html.youbike_sample .inner_cell div {
 }
 /* for mrt sample page */
 html.mrt_sample body {
-	background:url("figures/mrt_sample3.png");
+	background:url("figures/mrt_sample2c.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 html.mrt_sample .inner_cell div {
 	background-color: rgba(255,255,255,0.1);
+}
+/* for conclusion + next page */
+html.whatsnext body {
+	background:url("images/modes_integrations3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+html.whatsnext .inner_cell div {
+	background-color: rgba(150,150,150,0.2);
 }
 
 
